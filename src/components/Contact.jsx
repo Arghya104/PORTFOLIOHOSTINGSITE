@@ -12,9 +12,9 @@ function Contact() {
             best to get back to you!
           </p>
           <div className="contact-links">
-            <a href="mailto:john.doe@example.com">Email Me</a>
-            <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:arghyaghosh790@gmail.com">Email Me</a>
+            <a href="https://linkedin.com/in/arghyaa-ghosh-48a046209" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/Arghya104" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
       </div>

@@ -1,0 +1,51 @@
+.education-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.education-item {
+  border: 1px solid #e5e5e5;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.education-item:hover {
+  border-color: #000000;
+  transform: translateY(-5px);
+}
+
+.education-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.degree {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.period {
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.grade {
+  font-weight: 500;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,20 +3,28 @@ import './Skills.css'
 function Skills() {
   const skills = [
     {
-      title: "Frontend Development",
-      description: "React, Vue.js, JavaScript, TypeScript, HTML5, CSS3"
+      title: "Programming Languages",
+      description: "Java, JavaScript, TypeScript, Python, HTML, CSS, SQL, C"
     },
     {
-      title: "Design & UI/UX",
-      description: "Figma, Adobe Creative Suite, User Research, Prototyping"
+      title: "Frontend Technologies",
+      description: "React.js, Next.js, Redux, Bootstrap, Tailwind CSS, jQuery"
     },
     {
-      title: "Backend & Tools",
-      description: "Node.js, Express, MongoDB, Git, Webpack, Vite"
+      title: "Backend & APIs",
+      description: "Node.js, Express.js, Spring Boot, RESTful APIs, OAuth2, JWT"
     },
     {
-      title: "Mobile Development",
-      description: "React Native, Progressive Web Apps, Responsive Design"
+      title: "Database & Tools",
+      description: "MySQL, PostgreSQL, Git, GitHub, Postman, VS Code, IntelliJ IDEA"
+    },
+    {
+      title: "Cloud & DevOps",
+      description: "AWS, CI/CD Pipelines, Jenkins, GitHub Actions, Agile (Scrum, Kanban)"
+    },
+    {
+      title: "Additional Skills",
+      description: "Unity, API Security, DBMS, Problem-solving, Team Collaboration"
     }
   ]
 

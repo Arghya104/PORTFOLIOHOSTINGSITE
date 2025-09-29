@@ -3,20 +3,20 @@ import './Projects.css'
 function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React and Node.js. Features include user authentication, payment processing, and admin dashboard.",
+      title: "Admin Dashboard (Aditya Birla Hindalco)",
+      description: "Developed a forklift simulator game integrated with a full-stack admin dashboard using React, Node.js, Express, and MySQL for real-time monitoring and analytics. Built secure REST APIs and implemented authentication for performance analysis and decision-making.",
       liveDemo: "#",
       github: "#"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      title: "User Page (Aditya Birla Hindalco)",
+      description: "Developed a responsive and interactive User Page using React to allow participants to access and engage with the forklift simulation system. Integrated authentication and session management with backend APIs for user data tracking and performance logging.",
       liveDemo: "#",
       github: "#"
     },
     {
-      title: "Portfolio Website",
-      description: "A minimalist portfolio website showcasing projects and skills. Built with modern web technologies and optimized for performance.",
+      title: "Full-Stack Web Applications",
+      description: "Developed and maintained 5+ full-stack web applications using Java, React.js, Node.js, and MySQL. Built scalable REST APIs with Spring Boot and Node.js, reducing API latency by 25% and increasing user engagement by 20%.",
       liveDemo: "#",
       github: "#"
     }
