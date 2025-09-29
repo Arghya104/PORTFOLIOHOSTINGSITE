@@ -1,8 +1,13 @@
 import './About.css'
+import galaxyImage from '../assets/images/galaxy-night-landscape.jpg'
 
 function About() {
   return (
-    <section id="about" className="section">
+    <section id="about" className="section about-section">
+      <div className="about-background">
+        <img src={galaxyImage} alt="Galaxy background" className="about-bg-image" />
+        <div className="about-overlay"></div>
+      </div>
       <div className="container">
         <div className="about-content">
           <div>

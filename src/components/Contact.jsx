@@ -1,8 +1,13 @@
 import './Contact.css'
+import galaxyImage from '../assets/images/galaxy-night-landscape.jpg'
 
 function Contact() {
   return (
-    <section id="contact" className="section">
+    <section id="contact" className="section contact-section">
+      <div className="contact-background">
+        <img src={galaxyImage} alt="Galaxy background" className="contact-bg-image" />
+        <div className="contact-overlay"></div>
+      </div>
       <div className="container">
         <div className="contact-content">
           <h2>Let's Work Together</h2>

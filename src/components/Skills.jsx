@@ -1,4 +1,5 @@
 import './Skills.css'
+import skillsImage from '../assets/images/rm314-aew-19.jpg'
 
 function Skills() {
   const skills = [
@@ -29,7 +30,11 @@ function Skills() {
   ]
 
   return (
-    <section id="skills" className="section">
+    <section id="skills" className="section skills-section">
+      <div className="skills-background">
+        <img src={skillsImage} alt="Skills background" className="skills-bg-image" />
+        <div className="skills-overlay"></div>
+      </div>
       <div className="container">
         <h2 className="skills-title">Skills & Technologies</h2>
         <div className="skills-grid">
