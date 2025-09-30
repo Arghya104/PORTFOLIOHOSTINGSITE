@@ -59,7 +59,69 @@
 }
 
 @media (max-width: 768px) {
+  .experience-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
   .experience-item {
     padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .experience-header h3 {
+    font-size: 1.3rem;
+  }
+  
+  .achievements li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-title {
+    font-size: 1.8rem;
+  }
+  
+  .experience-item {
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .experience-header h3 {
+    font-size: 1.2rem;
+  }
+  
+  .company {
+    font-size: 0.95rem;
+  }
+  
+  .period {
+    font-size: 0.9rem;
+  }
+  
+  .achievements li {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.6rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .experience-title {
+    font-size: 1.6rem;
+  }
+  
+  .experience-item {
+    padding: 1rem;
+  }
+  
+  .experience-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .achievements li {
+    font-size: 0.85rem;
   }
 }

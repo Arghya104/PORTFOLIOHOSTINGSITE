@@ -45,7 +45,79 @@
 }
 
 @media (max-width: 768px) {
+  .education-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
   .education-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .education-item {
+    padding: 1.5rem;
+  }
+  
+  .education-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .degree {
+    font-size: 0.95rem;
+  }
+  
+  .period {
+    font-size: 0.9rem;
+  }
+  
+  .grade {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-title {
+    font-size: 1.8rem;
+  }
+  
+  .education-item {
+    padding: 1.2rem;
+  }
+  
+  .education-item h3 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+  
+  .degree {
+    font-size: 0.9rem;
+  }
+  
+  .period {
+    font-size: 0.85rem;
+  }
+  
+  .grade {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .education-title {
+    font-size: 1.6rem;
+  }
+  
+  .education-item {
+    padding: 1rem;
+  }
+  
+  .education-item h3 {
+    font-size: 1rem;
+  }
+  
+  .degree, .period, .grade {
+    font-size: 0.8rem;
   }
 }

@@ -72,12 +72,106 @@
 }
 
 @media (max-width: 768px) {
+  .certifications-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
   .certifications-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .certification-item {
+    padding: 1.5rem;
+  }
+  
+  .certification-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .issuer {
+    font-size: 0.95rem;
+  }
+  
+  .year {
+    font-size: 0.9rem;
+  }
+  
+  .competencies-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   
   .competencies-list {
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .competency-tag {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certifications-title {
+    font-size: 1.8rem;
+  }
+  
+  .certification-item {
+    padding: 1.2rem;
+  }
+  
+  .certification-item h3 {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  
+  .issuer {
+    font-size: 0.9rem;
+  }
+  
+  .year {
+    font-size: 0.85rem;
+  }
+  
+  .competencies-title {
+    font-size: 1.3rem;
+  }
+  
+  .competency-tag {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .certifications-title {
+    font-size: 1.6rem;
+  }
+  
+  .certification-item {
+    padding: 1rem;
+  }
+  
+  .certification-item h3 {
+    font-size: 0.95rem;
+  }
+  
+  .issuer, .year {
+    font-size: 0.8rem;
+  }
+  
+  .competencies-title {
+    font-size: 1.2rem;
+  }
+  
+  .competency-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
   }
 }
