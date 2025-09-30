@@ -1,4 +1,5 @@
 import './Certifications.css'
+import spaceImage from '../assets/images/rm314-aew-19.jpg'
 
 function Certifications() {
   const certifications = [
@@ -28,7 +29,11 @@ function Certifications() {
   ]
 
   return (
-    <section id="certifications" className="section">
+    <section id="certifications" className="section certifications-section">
+      <div className="certifications-background">
+        <img src={spaceImage} alt="Space background" className="certifications-bg-image" />
+        <div className="certifications-overlay"></div>
+      </div>
       <div className="container">
         <h2 className="certifications-title">Certifications & Achievements</h2>
         <div className="certifications-grid">

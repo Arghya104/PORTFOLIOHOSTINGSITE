@@ -1,4 +1,5 @@
 import './Projects.css'
+import spaceImage from '../assets/images/5532919.jpg'
 
 function Projects() {
   const projects = [
@@ -23,7 +24,11 @@ function Projects() {
   ]
 
   return (
-    <section id="projects" className="section">
+    <section id="projects" className="section projects-section">
+      <div className="projects-background">
+        <img src={spaceImage} alt="Space background" className="projects-bg-image" />
+        <div className="projects-overlay"></div>
+      </div>
       <div className="container">
         <h2 className="projects-title">Featured Projects</h2>
         <div className="projects-grid">

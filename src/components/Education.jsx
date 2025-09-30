@@ -1,4 +1,5 @@
 import './Education.css'
+import spaceImage from '../assets/images/galaxy-night-landscape (1).jpg'
 
 function Education() {
   const education = [
@@ -17,7 +18,11 @@ function Education() {
   ]
 
   return (
-    <section id="education" className="section">
+    <section id="education" className="section education-section">
+      <div className="education-background">
+        <img src={spaceImage} alt="Space background" className="education-bg-image" />
+        <div className="education-overlay"></div>
+      </div>
       <div className="container">
         <h2 className="education-title">Education</h2>
         <div className="education-grid">

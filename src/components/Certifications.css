@@ -1,9 +1,50 @@
+.certifications-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.certifications-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.certifications-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.certifications-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
 .certifications-title {
+  position: relative;
+  z-index: 2;
   text-align: center;
   margin-bottom: 3rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .certifications-grid {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
@@ -11,42 +52,46 @@
 }
 
 .certification-item {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #333333;
   padding: 2rem;
   text-align: center;
   transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .certification-item:hover {
-  border-color: #000000;
+  border-color: #ffffff;
   transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .certification-item h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 .issuer {
   font-weight: 600;
-  color: #333;
+  color: #cccccc;
   margin-bottom: 0.5rem;
 }
 
 .year {
-  color: #666;
+  color: #999999;
   font-style: italic;
 }
 
 .competencies-section {
+  position: relative;
+  z-index: 2;
   text-align: center;
 }
 
 .competencies-title {
   font-size: 1.8rem;
   margin-bottom: 2rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 .competencies-list {
@@ -57,18 +102,19 @@
 }
 
 .competency-tag {
-  background-color: #f8f8f8;
-  border: 1px solid #e5e5e5;
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
+  color: #ffffff;
   transition: all 0.3s ease;
 }
 
 .competency-tag:hover {
-  background-color: #000000;
-  color: #ffffff;
-  border-color: #000000;
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
 }
 
 @media (max-width: 768px) {

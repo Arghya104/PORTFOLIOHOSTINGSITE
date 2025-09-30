@@ -1,39 +1,82 @@
+.experience-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.experience-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.experience-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
 .experience-title {
+  position: relative;
+  z-index: 2;
   text-align: center;
   margin-bottom: 3rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .experience-list {
+  position: relative;
+  z-index: 2;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .experience-item {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #333333;
   padding: 2rem;
   margin-bottom: 2rem;
   transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .experience-item:hover {
-  border-color: #000000;
+  border-color: #ffffff;
   transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .experience-header h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 .company {
   font-weight: 600;
-  color: #333;
+  color: #cccccc;
   margin-bottom: 0.5rem;
 }
 
 .period {
-  color: #666;
+  color: #999999;
   font-style: italic;
   margin-bottom: 1.5rem;
 }
@@ -54,7 +97,7 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
 }
 

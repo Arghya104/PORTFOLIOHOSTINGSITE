@@ -1,4 +1,5 @@
 import './Experience.css'
+import spaceImage from '../assets/images/watercolour_night_sky_background_2607.jpg'
 
 function Experience() {
   const experiences = [
@@ -18,7 +19,11 @@ function Experience() {
   ]
 
   return (
-    <section id="experience" className="section">
+    <section id="experience" className="section experience-section">
+      <div className="experience-background">
+        <img src={spaceImage} alt="Space background" className="experience-bg-image" />
+        <div className="experience-overlay"></div>
+      </div>
       <div className="container">
         <h2 className="experience-title">Professional Experience</h2>
         <div className="experience-list">

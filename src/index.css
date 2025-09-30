@@ -8,8 +8,8 @@
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   line-height: 1.6;
   font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,12 +20,13 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
+  transition: all 0.3s ease;
 }
 
 a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
@@ -59,9 +60,9 @@ p {
 }
 
 button {
-  border: 2px solid #000000;
+  border: 2px solid #ffffff;
   background-color: transparent;
-  color: #000000;
+  color: #ffffff;
   padding: 12px 24px;
   font-size: 1rem;
   font-weight: 500;
@@ -73,12 +74,12 @@ button {
 }
 
 button:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 button:focus {
-  outline: 2px solid #000000;
+  outline: 2px solid #ffffff;
   outline-offset: 2px;
 }
 
@@ -90,7 +91,7 @@ button:focus {
 
 .section {
   padding: 5rem 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #333333;
 }
 
 .section:last-child {

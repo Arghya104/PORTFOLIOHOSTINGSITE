@@ -1,5 +1,5 @@
 import './Navigation.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -11,6 +11,28 @@ function Navigation() {
   const closeMenu = () => {
     setIsMenuOpen(false)
   }
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isMenuOpen && !event.target.closest('.nav-links') && !event.target.closest('.nav-toggle')) {
+        closeMenu()
+      }
+    }
+
+    if (isMenuOpen) {
+      document.addEventListener('click', handleClickOutside)
+      // Prevent body scroll when menu is open
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside)
+      document.body.style.overflow = 'unset'
+    }
+  }, [isMenuOpen])
 
   return (
     <nav className="nav">
