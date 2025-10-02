@@ -4,6 +4,7 @@ import { useRef } from 'react'
 import galaxyImage from '../assets/images/galaxy-night-landscape.jpg'
 import spaceImage from '../assets/images/5532919.jpg'
 import nebulaImage from '../assets/images/rm314-aew-19.jpg'
+import arghyaPhoto from '../assets/images/Arghya_Ghosh.jpg'
 
 function Hero() {
   const containerRef = useRef(null)
@@ -50,6 +51,7 @@ function Hero() {
       
       <div className="container">
         <div className="hero-content">
+          {/* Left side - Text content */}
           <motion.div 
             className="hero-text"
             ref={textRef}
@@ -120,6 +122,30 @@ function Hero() {
                 Download CV
               </motion.button>
             </motion.div>
+          </motion.div>
+
+          {/* Right side - Profile Picture */}
+          <motion.div 
+            className="hero-visual"
+            initial={{ opacity: 0, x: 50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <div className="profile-container">
+              <div className="profile-image">
+                <img 
+                  src={arghyaPhoto} 
+                  alt="Arghya Ghosh" 
+                  className="profile-photo"
+                />
+                <div className="profile-ring"></div>
+                <div className="profile-glow"></div>
+              </div>
+              <div className="profile-info">
+                <h3>Arghya Ghosh</h3>
+                <p>Full Stack Developer</p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

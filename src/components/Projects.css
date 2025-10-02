@@ -76,14 +76,59 @@
 .project-links {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
-.project-links a {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-bottom: 1px solid #ffffff;
-  padding-bottom: 2px;
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(100, 255, 218, 0.3);
+  border-radius: 8px;
+  background: rgba(100, 255, 218, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  color: #64ffda;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(100, 255, 218, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.project-link:hover::before {
+  left: 100%;
+}
+
+.project-link:hover {
+  border-color: #64ffda;
+  background: rgba(100, 255, 218, 0.2);
+  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3);
+  transform: translateY(-2px) scale(1.05);
+  color: #ffffff;
+}
+
+.project-link svg {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.project-link:hover svg {
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -112,14 +157,17 @@
   }
   
   .project-links {
-    flex-direction: column;
     gap: 0.8rem;
-    align-items: flex-start;
   }
   
-  .project-links a {
-    font-size: 0.9rem;
-    padding: 0.5rem 0;
+  .project-link {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .project-link svg {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -141,8 +189,14 @@
     line-height: 1.5;
   }
   
-  .project-links a {
-    font-size: 0.85rem;
+  .project-link {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .project-link svg {
+    width: 16px;
+    height: 16px;
   }
 }
 
