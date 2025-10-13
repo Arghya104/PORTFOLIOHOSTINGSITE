@@ -54,7 +54,6 @@ function Navigation() {
             <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
             <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
             <li><a href="#education" onClick={closeMenu}>Education</a></li>
-            <li><a href="#certifications" onClick={closeMenu}>Certifications</a></li>
             <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
           </ul>
         </div>

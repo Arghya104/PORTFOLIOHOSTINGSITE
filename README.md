@@ -1,16 +1,59 @@
-# React + Vite
+# Arghya Ghosh - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, Vite, and Framer Motion. This portfolio showcases my skills, experience, projects, and achievements as a Full Stack Developer.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Production URL:** https://vite-project-ievqs4lev-arghyas-projects-7a07f784.vercel.app
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Modern UI/UX**: Contemporary design with glassmorphism effects and smooth animations
+- **Interactive Components**: Built with Framer Motion for engaging user experience
+- **Performance Optimized**: Fast loading times and smooth scrolling
+- **SEO Friendly**: Proper meta tags and semantic HTML structure
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React 19, Vite, Framer Motion
+- **Styling**: CSS3 with custom animations
+- **Deployment**: Vercel
+- **Version Control**: Git & GitHub
+
+## 📱 Sections
+
+- **Hero**: Introduction with animated background
+- **About**: Personal and professional summary
+- **Skills**: Technical expertise and technologies
+- **Experience**: Professional work history
+- **Projects**: Featured projects and achievements
+- **Education**: Academic background
+- **Contact**: Get in touch information
+
+## 🚀 Deployment
+
+This project is automatically deployed to Vercel. Any changes pushed to the main branch will trigger a new deployment.
+
+### Manual Deployment
+
+```bash
+# Install dependencies
+npm install
+
+# Build for production
+npm run build
+
+# Deploy to Vercel
+vercel --prod
+```
+
+## 📧 Contact
+
+- **Email**: arghyaghosh790@gmail.com
+- **LinkedIn**: [Arghya Ghosh](https://linkedin.com/in/arghyaa-ghosh-48a046209)
+- **GitHub**: [Arghya104](https://github.com/Arghya104)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
