@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with React, Vite, and Framer Motion
 
 ## 🚀 Live Demo
 
-**Production URL:** https://vite-project-ievqs4lev-arghyas-projects-7a07f784.vercel.app
+**Production URL:** https://vite-project-ezxv299id-arghyas-projects-7a07f784.vercel.app
 
 ## ✨ Features
 

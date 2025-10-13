@@ -65,7 +65,7 @@ function Hero() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Hello, I'm
+              Welcome, I am
             </motion.div>
             
             <motion.h1 
@@ -83,7 +83,7 @@ function Hero() {
               animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              Full Stack Developer
+              Senior Full Stack Developer
             </motion.div>
             
             <motion.p 
@@ -92,9 +92,30 @@ function Hero() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              I create innovative web solutions and bring ideas to life through clean, 
-              efficient code. Specializing in modern technologies and user-centered design.
+              Crafting exceptional digital experiences through innovative web solutions. 
+              I specialize in building scalable applications with cutting-edge technologies, 
+              delivering robust solutions that drive business growth and user engagement.
             </motion.p>
+            
+            <motion.div 
+              className="hero-stats"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.8, delay: 1.0 }}
+            >
+              <div className="stat-item">
+                <span className="stat-number">2+</span>
+                <span className="stat-label">Years Experience</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">15+</span>
+                <span className="stat-label">Projects Delivered</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">5+</span>
+                <span className="stat-label">Technologies</span>
+              </div>
+            </motion.div>
             
             <motion.div 
               className="hero-buttons"
@@ -109,7 +130,7 @@ function Hero() {
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                View My Work
+                Explore Portfolio
               </motion.button>
               
               <motion.button 
@@ -119,7 +140,7 @@ function Hero() {
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                Download CV
+                Download Resume
               </motion.button>
             </motion.div>
           </motion.div>
@@ -143,7 +164,12 @@ function Hero() {
               </div>
               <div className="profile-info">
                 <h3>Arghya Ghosh</h3>
-                <p>Full Stack Developer</p>
+                <p>Senior Full Stack Developer</p>
+                <div className="profile-badges">
+                  <span className="badge">React Expert</span>
+                  <span className="badge">Node.js</span>
+                  <span className="badge">AWS Certified</span>
+                </div>
               </div>
             </div>
           </motion.div>

@@ -93,30 +93,61 @@
 }
 
 .hero-greeting {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #64ffda;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
   margin-bottom: 1rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.hero-greeting::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
 }
 
 .hero-name {
   font-size: 4.5rem;
   font-weight: 700;
-  color: #ffffff;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  text-shadow: 0 0 30px rgba(100, 255, 218, 0.3);
+  text-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+  position: relative;
 }
 
 .hero-role {
   font-size: 1.6rem;
-  font-weight: 300;
-  color: #b0b0b0;
+  font-weight: 500;
+  color: var(--accent-color);
   margin-bottom: 2rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-role::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 2px;
+  background: var(--gradient-secondary);
+  border-radius: 2px;
 }
 
 .hero-description {
@@ -128,6 +159,41 @@
   margin-left: auto;
   margin-right: auto;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .hero-buttons {
@@ -301,6 +367,18 @@
     font-size: 1rem;
   }
   
+  .hero-stats {
+    gap: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
   .hero-buttons {
     flex-direction: column;
     align-items: center;
@@ -337,6 +415,19 @@
   
   .hero-description {
     font-size: 0.95rem;
+  }
+  
+  .hero-stats {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  
+  .stat-number {
+    font-size: 1.3rem;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
   }
   
   .btn-primary,
@@ -476,9 +567,34 @@
 
 .profile-info p {
   font-size: 1.1rem;
-  color: #64ffda;
+  color: var(--accent-color);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
-  margin: 0;
+  margin: 0 0 1rem 0;
+}
+
+.profile-badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.badge {
+  background: var(--bg-card);
+  color: var(--primary-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--primary-color);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  background: var(--primary-color);
+  color: var(--text-primary);
+  transform: translateY(-2px);
 }
 
 @keyframes rotateRing {
