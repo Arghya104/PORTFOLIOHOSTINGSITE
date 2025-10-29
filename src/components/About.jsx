@@ -9,7 +9,7 @@ function About() {
         <div className="about-overlay"></div>
       </div>
       <div className="container">
-        <div className="about-content">
+        <div className="about-content dm-serif-text-regular ">
           <div>
             <h2>About Me</h2>
           </div>

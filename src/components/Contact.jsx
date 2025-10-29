@@ -9,7 +9,7 @@ function Contact() {
         <div className="contact-overlay"></div>
       </div>
       <div className="container">
-        <div className="contact-content">
+        <div className="contact-content dm-serif-text-regular ">
           <h2>Let's Work Together</h2>
           <p>
             I'm always interested in new opportunities and exciting projects. 

@@ -69,7 +69,7 @@ function Hero() {
             </motion.div>
             
             <motion.h1 
-              className="hero-name"
+              className="hero-name dm-serif-text-regular"
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -78,12 +78,12 @@ function Hero() {
             </motion.h1>
             
             <motion.div 
-              className="hero-role"
+              className="hero-role dm-serif-text-regular"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              Senior Full Stack Developer
+              Full Stack Developer
             </motion.div>
             
             <motion.p 
@@ -104,12 +104,12 @@ function Hero() {
               transition={{ duration: 0.8, delay: 1.0 }}
             >
               <div className="stat-item">
-                <span className="stat-number">2+</span>
+                <span className="stat-number">1+</span>
                 <span className="stat-label">Years Experience</span>
               </div>
               <div className="stat-item">
-                <span className="stat-number">15+</span>
-                <span className="stat-label">Projects Delivered</span>
+                <span className="stat-number">3+</span>
+                <span className="stat-label">Projects</span>
               </div>
               <div className="stat-item">
                 <span className="stat-number">5+</span>
@@ -164,7 +164,7 @@ function Hero() {
               </div>
               <div className="profile-info">
                 <h3>Arghya Ghosh</h3>
-                <p>Senior Full Stack Developer</p>
+                <p>Full Stack Developer</p>
                 <div className="profile-badges">
                   <span className="badge">React Expert</span>
                   <span className="badge">Node.js</span>

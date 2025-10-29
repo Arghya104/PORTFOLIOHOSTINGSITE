@@ -24,7 +24,7 @@ function Education() {
         <div className="education-overlay"></div>
       </div>
       <div className="container">
-        <h2 className="education-title">Education</h2>
+        <h2 className="education-title dm-serif-text-regular " style={{fontSize: '3.5rem'}}>Education</h2>
         <div className="education-grid">
           {education.map((edu, index) => (
             <div key={index} className="education-item">

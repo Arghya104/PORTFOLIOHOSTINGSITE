@@ -10,33 +10,33 @@ function Skills() {
   const skills = [
     {
       title: "Programming Languages",
-      description: "Proficient in Java, JavaScript, TypeScript, Python, HTML, CSS, SQL, and C with 2+ years of hands-on experience",
-      technologies: ["Java", "JavaScript", "TypeScript", "Python", "HTML", "CSS", "SQL", "C"]
+      description: "Proficient in Java, JavaScript, Python, HTML, CSS, and SQL.",
+      technologies: ["Java", "JavaScript", "Python", "HTML", "CSS", "SQL"]
     },
     {
       title: "Frontend Development",
-      description: "Expert in React.js, Next.js, Redux, Bootstrap, Tailwind CSS, and jQuery for building responsive web applications",
-      technologies: ["React.js", "Next.js", "Redux", "Bootstrap", "Tailwind CSS", "jQuery"]
+      description: "Skilled in React.js, Next.js, Bootstrap, and Tailwind CSS for building modern web interfaces.",
+      technologies: ["React.js", "Next.js", "Bootstrap", "Tailwind CSS"]
     },
     {
       title: "Backend & API Development",
-      description: "Skilled in Node.js, Express.js, Spring Boot, RESTful APIs, OAuth2, and JWT for scalable server-side solutions",
-      technologies: ["Node.js", "Express.js", "Spring Boot", "REST APIs", "OAuth2", "JWT"]
+      description: "Experienced in Node.js, Express.js, and REST APIs for server-side solutions.",
+      technologies: ["Node.js", "Express.js", "REST APIs"]
     },
     {
       title: "Database & Development Tools",
-      description: "Experienced with MySQL, PostgreSQL, Git, GitHub, Postman, VS Code, and IntelliJ IDEA for efficient development",
-      technologies: ["MySQL", "PostgreSQL", "Git", "GitHub", "Postman", "VS Code"]
+      description: "Experienced with MySQL, Git, GitHub, and Postman for robust development workflows.",
+      technologies: ["MySQL", "Git", "GitHub", "Postman"]
     },
     {
-      title: "Cloud & DevOps",
-      description: "Knowledgeable in AWS, CI/CD Pipelines, Jenkins, GitHub Actions, and Agile methodologies (Scrum, Kanban)",
-      technologies: ["AWS", "CI/CD", "Jenkins", "GitHub Actions", "Agile", "Scrum"]
+      title: "Cloud Management",
+      description: "Knowledgeable in CI/CD and GitHub Actions to automate deployments.",
+      technologies: ["CI/CD", "GitHub Actions"]
     },
     {
       title: "Additional Expertise",
-      description: "Proficient in Unity development, API Security, DBMS, Problem-solving, and Team Collaboration",
-      technologies: ["Unity", "API Security", "DBMS", "Problem-solving", "Team Work"]
+      description: "Also competent in Unity development, problem-solving, and teamwork.",
+      technologies: ["Unity", "Problem-solving", "Team Work"]
     }
   ]
 
@@ -77,7 +77,7 @@ function Skills() {
 
       <div className="container">
         <motion.h2 
-          className="skills-title"
+          className="skills-title dm-serif-text-regular"
           initial={{ opacity: 0, y: -30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
           transition={{ duration: 0.8, delay: 0.2 }}

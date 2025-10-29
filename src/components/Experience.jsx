@@ -17,11 +17,9 @@ function Experience() {
       type: "Full-time",
       achievements: [
         "Developed and maintained 5+ full-stack web applications using Java, React.js, Node.js, and MySQL",
-        "Built scalable REST APIs with Spring Boot and Node.js, reducing API latency by 25%",
-        "Integrated OAuth2/JWT authentication for secure, role-based access",
-        "Implemented CI/CD pipelines using Jenkins and GitHub Actions, reducing deployment time by 40%",
+        "Built scalable REST APIs with Node.js, reducing API latency by 25%",
+        "Implemented CI/CD pipelines using GitHub Actions, reducing deployment time by 40%",
         "Collaborated in Agile Scrum teams for efficient project delivery",
-        "Contributed to UI/UX improvements, increasing user engagement by 20%"
       ]
     }
   ]
@@ -41,7 +39,7 @@ function Experience() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="experience-title">Professional Experience</h2>
+          <h2 className="experience-title dm-serif-text-regular ">Professional Experience</h2>
           <p className="experience-subtitle">Building digital solutions with passion and precision</p>
         </motion.div>
 

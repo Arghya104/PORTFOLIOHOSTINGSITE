@@ -82,12 +82,12 @@
 }
 
 .experience-title {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 1rem;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-  background: linear-gradient(135deg, #ffffff 0%, #64ffda 100%);
+  /* text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); */
+  background: linear-gradient(135deg, #ffffff 0%, #002eac 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -96,9 +96,12 @@
 
 .experience-subtitle {
   font-size: 1.2rem;
-  color: #64ffda;
-  font-weight: 300;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(135deg, #ffffff 0%, #eeff00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 500px;
+  /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); */
   letter-spacing: 0.5px;
 }
 

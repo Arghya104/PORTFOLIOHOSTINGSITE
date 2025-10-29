@@ -36,7 +36,7 @@ function Navigation() {
 
   return (
     <nav className="nav">
-      <div className="container">
+      <div style={{maxWidth: '1800px', margin: '0 auto', padding: '0 2rem'}}>
         <div className="nav-content">
           <div className="nav-logo">PORTFOLIO</div>
           <button 
