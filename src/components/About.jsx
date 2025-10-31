@@ -15,20 +15,23 @@ function About() {
           </div>
           <div className="about-text">
             <p>
-              I'm a passionate Full Stack Developer with expertise in Java, JavaScript, 
-              React.js, and Node.js. I specialize in building high-performance, scalable 
-              applications and have experience in REST API development, CI/CD pipelines, 
-              and cloud integration.
+              I'm a passionate Full Stack Developer with expertise in Java, JavaScript, Python, 
+              HTML, CSS, and SQL. I specialize in building modern web applications using React.js, 
+              Next.js, Bootstrap, and Tailwind CSS for the frontend, along with Node.js, Express.js, 
+              and REST APIs for backend solutions.
             </p>
             <p>
               Currently working as a Web Developer at Eframe Infomedia Pvt. Ltd, where I 
-              develop and maintain full-stack web applications, build scalable REST APIs, 
-              and implement CI/CD pipelines that reduce deployment time by 40%.
+              develop and maintain full-stack web applications, work with MySQL databases, 
+              and implement CI/CD pipelines using GitHub Actions that streamline development 
+              workflows and automate deployments.
             </p>
             <p>
               I'm passionate about delivering impactful solutions and have contributed to 
-              open source projects on GitHub. I hold certifications in AWS Cloud Practitioner 
-              and Oracle Java Programmer, demonstrating my commitment to continuous learning.
+              open source projects on GitHub. I'm proficient with development tools like Git, 
+              GitHub, and Postman, and also have experience in Unity development. My strong 
+              problem-solving skills and ability to work effectively in teams help me deliver 
+              high-quality solutions.
             </p>
           </div>
         </div>
